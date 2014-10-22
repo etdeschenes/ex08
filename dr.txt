@@ -1,0 +1,39 @@
+ex08
+
+17/20
+
+  Association(String associationCode, String name, String description) {
+    this.associationCode = associationCode;
+    this.name = name;
+    this.description = description;
+  }
+  
+  -->
+  
+  Association(String this.associationCode, String this.name, String this.description);
+  
+8.1
+
+-1 GIVEN ASSOCIATION
+Sort the list of members of a GIVEN ASSOCIATION first by the last name, 
+THEN by the first name.
+-1 THEN
+
+sortByLetter est un mauvais nom:
+List sortByLetter(List members, String letter) {
+-->
+List extractByLetter(List members, String letter) {
+
+8.2
+
+class Member {
+  var memberList = new List();
+  -->
+  var associations = new List(); // member associations
+
+-1
+Lorsque vous ajoutez un membre à une association, 
+vous devez également ajouter l'association à ce membre.
+
+Lorsque vous supprimez un membre d'une association, 
+vous devez également supprimer l'association de ce membre.

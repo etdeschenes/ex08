@@ -2,15 +2,52 @@ import 'package:ex08/fonctions.dart';
 
 //no. 1
 no1() {
-  List associations = [{"name": "VC", "description": "Volleyball club"}, {"name": "BC", "description": "Basketball club"}];
-  List members = [{"associationCode" : "VC", "firstName": "Alfred", "lastName": "Clummed", "email": "ac@gmail.com"},
-                  {"associationCode" : "VC", "firstName": "Henri", "lastName": "Mariacha", "email": "hm@gmail.com"},
-                  {"associationCode" : "VC", "firstName": "Bertrand", "lastName": "Tillent", "email": "bt@gmail.com"},
-                  {"associationCode" : "VC", "firstName": "Robert", "lastName": "Verse", "email": "rv@gmail.com"},
-                  {"associationCode" : "BC", "firstName": "Camille", "lastName": "Chenville", "email": "cc@gmail.com"},
-                  {"associationCode" : "BC", "firstName": "Catherine", "lastName": "Napind", "email": "cn@gmail.com"},
-                  {"associationCode" : "BC", "firstName": "Amelie", "lastName": "Bolders", "email": "ab@gmail.com"},
-                  {"associationCode" : "BC", "firstName": "Zoe", "lastName": "Noyer", "email": "zf@gmail.com"}];
+  List associations = [
+    {"name": "VC", "description": "Volleyball club"}, 
+    {"name": "BC", "description": "Basketball club"}
+  ];
+  List members = [
+    {"associationCode" : "VC", 
+      "firstName": "Alfred", 
+      "lastName": "Clummed", 
+      "email": "ac@gmail.com"
+    },
+    {"associationCode" : "VC", 
+      "firstName": "Henri", 
+      "lastName": "Mariacha", 
+      "email": "hm@gmail.com"
+    },
+    {"associationCode" : "VC", 
+      "firstName": "Bertrand", 
+      "lastName": "Tillent", 
+      "email": "bt@gmail.com"
+    },
+    {"associationCode" : "VC", 
+      "firstName": "Robert", 
+      "lastName": "Verse", 
+      "email": "rv@gmail.com"
+    },
+    {"associationCode" : "BC", 
+      "firstName": "Camille", 
+      "lastName": "Chenville", 
+      "email": "cc@gmail.com"
+    },
+    {"associationCode" : "BC", 
+      "firstName": "Catherine", 
+      "lastName": "Napind", 
+      "email": "cn@gmail.com"
+    },
+    {"associationCode" : "BC", 
+      "firstName": "Amelie", 
+      "lastName": "Bolders", 
+      "email": "ab@gmail.com"
+    },
+    {"associationCode" : "BC", 
+      "firstName": "Zoe", 
+      "lastName": "Noyer", 
+      "email": "zf@gmail.com"
+    }
+  ];
 
   print('#1 : Classement de la liste des membres par nom de famille, prénom et lettre donnée.');
   print("L'ordre en fonction du nom de famille : ${sortByLastName(members)}");

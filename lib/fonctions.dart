@@ -35,11 +35,9 @@ class Association {
   String description;
   var assoMember = new List();
 
-  Association(String associationCode, String name, String description) {
-    this.associationCode = associationCode;
-    this.name = name;
-    this.description = description;
-  }
+  Association(String this.associationCode, 
+              String this.name, 
+              String this.description);
 
   String toString() {
     return '{\n' 'Association \n'
@@ -80,12 +78,10 @@ class Member {
   String email;
   var memberList = new List();
 
-  Member(String associationCode, String firstName, String lastName, String email) {
-    this.associationCode = associationCode;
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.email = email;
-  }
+  Member(String this.associationCode, 
+         String this.firstName, 
+         String this.lastName, 
+         String this.email);
 
   String toString() {
     return '{\n' 'Member \n'
