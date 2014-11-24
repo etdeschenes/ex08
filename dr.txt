@@ -1,5 +1,9 @@
 ex08
 
+20/20
+
+---
+
 17/20
 
   Association(String associationCode, String name, String description) {
