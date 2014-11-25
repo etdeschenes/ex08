@@ -1,6 +1,26 @@
 ex08
 
-20/20
+18/20
+
+-1
+class Association {
+  ...
+  var memberships = new List();
+var memberships = new List();
+ne devrait pas être dans cette classe; devrait être dans une classe séparée
+var memberships = new List();
+-->
+var memberships = new Memberships(); 
+
+-1  
+class Member {
+  ...
+  var memberships = new List();
+var memberships = new List();
+ne devrait pas être dans cette classe; devrait être dans une classe séparée 
+var memberships = new List();
+-->
+var memberships = new Memberships(); 
 
 ---
 
